@@ -1,4 +1,4 @@
-ZappyBackend
+### ZappyBackend
 ## Environment setup
 
 ### 1. Prerequisites
