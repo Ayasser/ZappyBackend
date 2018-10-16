@@ -27,12 +27,13 @@ router.register(r'^twitter', TweetViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^slack', Slack),
-    url(r'^twitter', get_Tweets),
 
     url(r'^api/', include([
+        url(r'^slack', Slack.as_view()),
 
         url(r'^tweet_list', TweetViewSet.as_view()),
+        url(r'^twitter', get_Tweets.as_view()),
+
     ]))
 
 ]
